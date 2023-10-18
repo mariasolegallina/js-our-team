@@ -3,7 +3,9 @@
 - creare l'array teamMembersArray
 - inserire nell'array un oggetto con le informazioni di ogni membro del team
 - stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto:
-    - creare un ciclo for che stampi in console tutti i dati presenti in ogni posizione dell'array (i = 0; i < teamMembersArray; i++) 
+    - creare un ciclo for che stampi in console tutti i dati presenti in ogni posizione dell'array (i = 0; i < teamMembersArray; i++)
+
+- 
 
 Utilizzando i dati forniti, creare un array di oggetti per rappresentare i membri del team.
 Ogni membro è caratterizzato dalle seguenti informazioni:
@@ -20,14 +22,3 @@ BONUS 1:
 Trasformare la stringa foto in una immagine effettiva
 BONUS 2:
 Organizzare i singoli membri in card/schede (vedi screenshot)
-Consigli del giorno:
-Ragioniamo come sempre a step.
-Prima la logica in italiano e poi traduciamo in codice.
-E ricordiamoci che console.log() è nostro amico!
-dati
-Wayne Barnett	Founder & CEO	        wayne-barnett-founder-ceo.jpg
-Angela Caroll	Chief Editor	        angela-caroll-chief-editor.jpg
-Walter Gordon	Office Manager	        walter-gordon-office-manager.jpg
-Angela Lopez	Social Media Manager	angela-lopez-social-media-manager.jpg
-Scott Estrada	Developer	            scott-estrada-developer.jpg
-Barbara Ramos	Graphic Designer	    barbara-ramos-graphic-designer.jpg

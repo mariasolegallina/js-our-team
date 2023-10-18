@@ -42,6 +42,10 @@ for (let i = 0; i < teamMembersArray.length; i++) {
     // aggiungere il memberDiv nel DOM
     teamMembersDOMElement.appendChild(memberDiv)
 
+    // creare un div nel DOM e stampare l'immagine
+    const fotoElement = document.createElement("img")
+    fotoElement.src = member.foto;
+    
     // creare un div nel DOM e stampare il nome
     const nomeElement = document.createElement("h2")
     nomeElement.textContent = member.nome;
@@ -50,14 +54,10 @@ for (let i = 0; i < teamMembersArray.length; i++) {
     const ruoloElement = document.createElement("p")
     ruoloElement.textContent = member.ruolo;
 
-    // creare un div nel DOM e stampare l'immagine
-    const fotoElement = document.createElement("img")
-    fotoElement.src = member.foto;
-
     // aggiungere i div con le tre informazioni nel DOM
+    memberDiv.appendChild(fotoElement)
     memberDiv.appendChild(nomeElement)
     memberDiv.appendChild(ruoloElement)
-    memberDiv.appendChild(fotoElement)
     
 }
 
