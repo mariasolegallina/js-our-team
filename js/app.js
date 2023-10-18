@@ -1,4 +1,4 @@
-const teamMembersArray [
+const teamMembersArray = [
     {
         nome: 'Wayne Barnett',
         ruolo: 'Founder & CEO',
@@ -30,3 +30,8 @@ const teamMembersArray [
         foto: './img/barbara-ramos-graphic-designer.jpg',
     }
 ]
+
+
+for (let i = 0; i < teamMembersArray.length; i++) {
+    console.log(teamMembersArray[0])
+}
