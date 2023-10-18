@@ -1,3 +1,4 @@
+const teamMembersDOMElement = document.querySelector('.team-members')
 const teamMembersArray = [
     {
         nome: 'Wayne Barnett',
@@ -31,7 +32,32 @@ const teamMembersArray = [
     }
 ]
 
-
 for (let i = 0; i < teamMembersArray.length; i++) {
-    console.log(teamMembersArray[0])
+    const member = teamMembersArray[i]
+    
+    // creare un div nel DOM che contenga le informazioni su un membro
+    const memberDiv = document.createElement("div")
+    memberDiv.classList.add("team-member")
+
+    // aggiungere il memberDiv nel DOM
+    teamMembersDOMElement.appendChild(memberDiv)
+
+    // creare un div nel DOM e stampare il nome
+    const nomeElement = document.createElement("h2")
+    nomeElement.textContent = member.nome;
+
+    // creare un div nel DOM e stampare il ruolo
+    const ruoloElement = document.createElement("p")
+    ruoloElement.textContent = member.ruolo;
+
+    // creare un div nel DOM e stampare l'immagine
+    const fotoElement = document.createElement("img")
+    fotoElement.src = member.foto;
+
+    // aggiungere i div con le tre informazioni nel DOM
+    memberDiv.appendChild(nomeElement)
+    memberDiv.appendChild(ruoloElement)
+    memberDiv.appendChild(fotoElement)
+    
 }
+
